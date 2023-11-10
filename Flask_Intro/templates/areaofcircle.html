@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate the Area of Circle</title>
+</head>
+<body>
+    <h1>Area of Circle Calculator</h1>
+
+    <form action="/areaofcircle" method="post">
+        <label for="input_number">Enter the radius:</label>
+        <input type="text" id="input_number" name="radius">
+        <input type="submit" value="Calculate">
+    </form>
+
+    {% if result %}
+    <p>Area of a Circle: {{ result }}</p>
+    {% endif %}
+
+</body>
+</html>
